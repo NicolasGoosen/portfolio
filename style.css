@@ -1,0 +1,42 @@
+
+
+/* Boilerplate stuff
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root { box-sizing: border-box; scroll-behavior: smooth; }
+*, ::before, ::after { padding: 0; margin: 0; box-sizing: inherit; }
+body { -webkit-font-smoothing: antialiased; }
+a:hover { cursor: pointer; }
+
+/* Colours
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+    --tdnd-bkg-dark:   hsl(  20,  1%, 70% );
+    --tdnd-bkg-light:  hsl(  20,  1%, 95% );
+    --tdnd-highlight:  rgb(  50,  70, 195 );
+}
+
+/* Colours
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+    background-color: var( --tdnd-bkg-light );
+}
+
+
+/* Nav Bar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.main-nav {
+    background-color: var( --tdnd-bkg-dark );
+    height: 70px;
+}
+
+/* Reading Progress Bar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.reading-progress {
+    background-color: var( --tdnd-highlight );    
+    box-shadow: 2px 3px 4px 0px rgba( 0, 0, 0, 0.16 );
+    height: 5px;
+    margin-right: auto;
+    width: 50vw;
+}
+
+
