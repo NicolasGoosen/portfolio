@@ -1,24 +1,38 @@
 
-
 /* Boilerplate stuff
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-:root { box-sizing: border-box; scroll-behavior: smooth; }
-*, ::before, ::after { padding: 0; margin: 0; box-sizing: inherit; }
-body { -webkit-font-smoothing: antialiased; }
-a:hover { cursor: pointer; }
+:root {
+    box-sizing: border-box; 
+    scroll-behavior: smooth; }
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit; }
+/* *:focus {
+    outline: none; } */
+/* body {
+    -webkit-font-smoothing: antialiased; } */
+
+
+/* Z-indexex
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+    --mobile-footer-nav: 500;
+}
+
 
 /* Colours
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
     --tdnd-bkg-dark:   hsl(  20,  1%, 70% );
     --tdnd-bkg-light:  hsl(  20,  1%, 95% );
-    --tdnd-highlight:  rgb(  50,  70, 195 );
-}
 
-/* Colours
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-body {
-    background-color: var( --tdnd-bkg-light );
+    --primary-highlight: rgb(  49,  72, 193 );
+
+    --mobile-nav-bg:     rgb( 179, 177, 177 );
+    --mobile-nav-color:  rgb( 235, 235, 235 );
 }
 
 
@@ -29,14 +43,5 @@ body {
     height: 70px;
 }
 
-/* Reading Progress Bar
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.reading-progress {
-    background-color: var( --tdnd-highlight );    
-    box-shadow: 2px 3px 4px 0px rgba( 0, 0, 0, 0.16 );
-    height: 5px;
-    margin-right: auto;
-    width: 50vw;
-}
 
 
