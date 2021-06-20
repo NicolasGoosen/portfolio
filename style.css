@@ -1,4 +1,9 @@
 
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'JetBrains Mono', monospace;
+*/
+
 /* Boilerplate stuff
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
@@ -10,38 +15,322 @@
     padding: 0;
     margin: 0;
     box-sizing: inherit; }
-/* *:focus {
-    outline: none; } */
-/* body {
-    -webkit-font-smoothing: antialiased; } */
+/**:focus {
+    outline: none; }*/
+/*body {
+    -webkit-font-smoothing: antialiased; }*/
 
+
+/* Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+
+}
 
 /* Z-indexex
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
-    --mobile-footer-nav: 500;
+
 }
 
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+*/
+.font-logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.375rem; /* 22px */
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: -0.020em;  /* adobe xd's unit is 1/1000em */
+}
+
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.625rem; /* 58px */
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: -0.020em;  /* adobe xd's unit is 1/1000em */
+    line-height: 1.030; /* 58px */
+}
+
+
+body {
+    /*line-height: 1;*/
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.250rem; /* 20px */
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.000em;  /* adobe xd's unit is 1/1000em */
+    line-height: 1.800; /* 36px */
+}
+p + p { margin-top: 0.5em /* 10px */ }
+
+p.caption-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* 16px */
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.000em;  /* adobe xd's unit is 1/1000em */
+    line-height: 1.750; /* 28px */
+}
+
+.text-center {
+    text-align: center;
+    /* yip, below is necessary when max-width's are applied */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Gradients
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+Interesting, I tried doing this:
+
+    .gradient { background-clip: text; }
+    .gradient.red-orange { background: linear-gradient(etc) }
+    .gradient.blue-cyan  { background: linear-gradient(etc) }
+
+...but it wouldn't work. The background-clip attribute has to
+be in the same rule declaration as the background, or a whole
+new background-clip is made. You have to use 'background-image'.
+
+*/
+.gradient-accent {
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% auto;
+}
+
+.gradient-accent.red-orange { background-image: linear-gradient(30deg,      Crimson ,    Orange ); }
+.gradient-accent.purple-red { background-image: linear-gradient(30deg, MediumPurple , IndianRed ); }
+
+/* red: 
+rgb(253, 96, 87);
+orange:  rgb(248, 191, 50)
+*/
 
 /* Colours
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-:root {
-    --tdnd-bkg-dark:   hsl(  20,  1%, 70% );
-    --tdnd-bkg-light:  hsl(  20,  1%, 95% );
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+*/
+.color-black-50 { color: rgba(   0,   0,   0, 0.5 ) }
+.color-black-60 { color: rgba(   0,   0,   0, 0.6 ) }
+.color-black    { color: rgba(   0,   0,   0, 1.0 ) }
+.color-white    { color: rgba( 255, 255, 255, 1.0 ) }
 
-    --primary-highlight: rgb(  49,  72, 193 );
+.bkg-black { background-color: black; }
 
-    --mobile-nav-bg:     rgb( 179, 177, 177 );
-    --mobile-nav-color:  rgb( 235, 235, 235 );
+/* Responsive Grid
+––––––––––––––––––––––––––––––––––––––––––––––––––
+Normal column is max 1000px wide
+*/
+
+section.full-width-column {
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+*/
+header *:not(script) { display: block; } /* avoid line-height issues */
+header {
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-left: 10%; /* todo: fix to responsive margins */ 
+    margin-right: 10%; /* todo: fix to responsive margins */
+    padding: 32px 0;
+}
+header > div:last-child {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+header > div:last-child > div {
+    margin-right: 20px;
+}
+header > div:last-child > div:last-child {
+    margin-right: 0;
+}
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+*/
+.max-60-wide { max-width: 60%; }
+.max-600px-wide { max-width: 600px; }
+.max-625px-wide { max-width: 625px; }
+.code-block {
+    width: 525px;
+    height: 245px;
+    margin: 0 auto;
+    background-color: rgba(36,50,56,1.0);
+    border-radius: 5px;
+}
+
+section.bowed-shape-section:before {
+    content: "";
+    background-color: red;
+    height: 150px;
+    position: absolute;
+    top: -150px;
+    width: 100%;
+    left: 0;
+    z-index: -100;
+    display: block;
+}
+
+/* Recent Work Carousel
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+*/
+.recent-work-carousel {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.recent-work-carousel > div {
+    height: max-content;
+    position: relative;
+    transition: transform 0.1s ease-in-out;
+    /* four columns with 20px gutter */
+    width: calc((100% - 20px * 3) / 4);
+}
+.recent-work-carousel > div > img {
+    border-radius: 3px;
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+}
+.recent-work-carousel > div:hover {
+    transform: scale(1.03);
+}
+.recent-work-carousel > div:hover > img {
+    opacity: 0.55;
 }
 
 
-/* Nav Bar
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.main-nav {
-    background-color: var( --tdnd-bkg-dark );
-    height: 70px;
+/* Older Work Carousel
+––––––––––––––––––––––––––––––––––––––––––––––––––
+This carousel is only 3 columns wide on desktop.
+*/
+.older-work-carousel {
+
+    display: flex;
+    overflow-y: scroll; /* these two lines give the scrolling momentum on ios */
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    align-items: stretch;
+
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    width: calc((100% - 20px) - (100% - 60px) / 4);
+    /* todo: fix proportional height here */
+    height: 350px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.older-work-carousel::-webkit-scrollbar { display: none; }
+/* Hide scrollbar for IE, Edge and Firefox */
+.older-work-carousel {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.older-work-carousel > div {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid cyan;
+}
+.older-work-carousel > div > img {
+    border-radius: 3px;
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+}
+.older-work-carousel > div:hover {
 }
 
 
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+*/
+.pt-1  { padding-top: 0.5em }
+.pt-2  { padding-top: 1.0em }
+.pt-3  { padding-top: 1.5em }
+.pt-4  { padding-top: 2.0em }
+.pt-5  { padding-top: 2.5em }
+.pt-6  { padding-top: 3.0em }
+.pt-7  { padding-top: 3.5em }
+.pt-8  { padding-top: 4.0em }
+.pt-9  { padding-top: 4.5em }
+.pt-10 { padding-top: 5.0em }
 
+.pb-1  { padding-bottom: 0.5em }
+.pb-2  { padding-bottom: 1.0em }
+.pb-3  { padding-bottom: 1.5em }
+.pb-4  { padding-bottom: 2.0em }
+.pb-5  { padding-bottom: 2.5em }
+.pb-6  { padding-bottom: 3.0em }
+.pb-7  { padding-bottom: 3.5em }
+.pb-8  { padding-bottom: 4.0em }
+.pb-9  { padding-bottom: 4.5em }
+.pb-10 { padding-bottom: 5.0em }
+
+.py-1  { padding-top: 0.5em; padding-bottom: 0.5em }
+.py-2  { padding-top: 1.0em; padding-bottom: 1.0em }
+.py-3  { padding-top: 1.5em; padding-bottom: 1.5em }
+.py-4  { padding-top: 2.0em; padding-bottom: 2.0em }
+.py-5  { padding-top: 2.5em; padding-bottom: 2.5em }
+.py-6  { padding-top: 3.0em; padding-bottom: 3.0em }
+.py-7  { padding-top: 3.5em; padding-bottom: 3.5em }
+.py-8  { padding-top: 4.0em; padding-bottom: 4.0em }
+.py-9  { padding-top: 4.5em; padding-bottom: 4.5em }
+.py-10 { padding-top: 5.0em; padding-bottom: 5.0em }
+
+.px-1  { padding-left: 0.5em; padding-right: 0.5em }
+.px-2  { padding-left: 1.0em; padding-right: 1.0em }
+.px-3  { padding-left: 1.5em; padding-right: 1.5em }
+.px-4  { padding-left: 2.0em; padding-right: 2.0em }
+.px-5  { padding-left: 2.5em; padding-right: 2.5em }
+.px-6  { padding-left: 3.0em; padding-right: 3.0em }
+.px-7  { padding-left: 3.5em; padding-right: 3.5em }
+.px-8  { padding-left: 4.0em; padding-right: 4.0em }
+.px-9  { padding-left: 4.5em; padding-right: 4.5em }
+.px-10 { padding-left: 5.0em; padding-right: 5.0em }
+
+
+.mt-0em { margin-top: 0.0em; }
+.mt-1em { margin-top: 0.5em; }
+.mt-2em { margin-top: 1.0em; }
+.mt-3em { margin-top: 1.5em; }
+.mt-4em { margin-top: 2.0em; }
+.mt-5em { margin-top: 2.5em; }
+.mt-6em { margin-top: 3.0em; }
+.mt-7em { margin-top: 3.5em; }
+.mt-8em { margin-top: 4.0em; }
+
+.mb-0em { margin-bottom: 0.0em; }
+.mb-1em { margin-bottom: 0.5em; }
+.mb-2em { margin-bottom: 1.0em; }
+.mb-3em { margin-bottom: 1.5em; }
+.mb-4em { margin-bottom: 2.0em; }
+.mb-5em { margin-bottom: 2.5em; }
+.mb-6em { margin-bottom: 3.0em; }
+.mb-7em { margin-bottom: 3.5em; }
+.mb-8em { margin-bottom: 4.0em; }
