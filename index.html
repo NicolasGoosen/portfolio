@@ -8,96 +8,119 @@
 
     <!-- Fonts:
          Raleway Black 900,
+         Raleway Semi-Bold 600,
          Raleway Medium 500
      -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;900&display=swap" rel="stylesheet">
 
     <title></title>
 </head>
 <body>
+
+    <!-- Navbar
+    ----------------------------------------- -->
     <header>
-        <div class="font-logo color-black-50">NicolasGoosen</div>
+        <div><a href="index.html" class="font-logo">NicolasGoosen</a></div>
         <!-- todo: obfuscate email -->
         <div>
-            <div>
+            <!-- LinkedIn Icon ----------------- -->
+            <a href="https://www.linkedin.com/in/nicolas-goosen" class="scale-on-hover" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                    <path id="linkedin-icon" d="M20.025,7.025a13,13,0,1,0,13,13A13,13,0,0,0,20.025,7.025ZM16.557,26.31H13.7V17.089h2.854ZM15.116,15.881a1.7,1.7,0,1,1,1.688-1.7A1.695,1.695,0,0,1,15.116,15.881ZM27.253,26.31h-2.84v-4.84c0-1.328-.5-2.069-1.554-2.069-1.142,0-1.739.772-1.739,2.069v4.84H18.382V17.089h2.738V18.33A3.216,3.216,0,0,1,23.9,16.807c1.955,0,3.355,1.194,3.355,3.664Z" transform="translate(-7.025 -7.025)" fill="rgba(0,0,0,0.5)"/>
+                    <path id="linkedin-icon" d="M20.025,7.025a13,13,0,1,0,13,13A13,13,0,0,0,20.025,7.025ZM16.557,26.31H13.7V17.089h2.854ZM15.116,15.881a1.7,1.7,0,1,1,1.688-1.7A1.695,1.695,0,0,1,15.116,15.881ZM27.253,26.31h-2.84v-4.84c0-1.328-.5-2.069-1.554-2.069-1.142,0-1.739.772-1.739,2.069v4.84H18.382V17.089h2.738V18.33A3.216,3.216,0,0,1,23.9,16.807c1.955,0,3.355,1.194,3.355,3.664Z" transform="translate(-7.025 -7.025)" />
                 </svg>
-            </div>
-            <div>
+            </a>
+            <!-- GitHub Icon ----------------- -->
+            <a href="https://github.com/NicolasGoosen" class="scale-on-hover" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                    <path id="github-icon" d="M13,0A13.168,13.168,0,0,0,0,13.329,13.307,13.307,0,0,0,8.89,25.977c.65.123.888-.289.888-.641,0-.318-.012-1.368-.018-2.482-3.617.806-4.38-1.573-4.38-1.573a3.507,3.507,0,0,0-1.443-1.95c-1.179-.827.089-.81.089-.81a2.741,2.741,0,0,1,1.993,1.374A2.729,2.729,0,0,0,9.8,21a2.866,2.866,0,0,1,.825-1.782C7.74,18.883,4.7,17.74,4.7,12.633a5.231,5.231,0,0,1,1.34-3.578A4.9,4.9,0,0,1,6.17,5.528S7.262,5.17,9.746,6.894a12.039,12.039,0,0,1,6.511,0c2.481-1.725,3.571-1.366,3.571-1.366a4.9,4.9,0,0,1,.127,3.527,5.221,5.221,0,0,1,1.338,3.578c0,5.119-3.041,6.247-5.936,6.577a3.23,3.23,0,0,1,.882,2.468c0,1.783-.015,3.219-.015,3.658,0,.355.234.77.893.639A13.305,13.305,0,0,0,26,13.329,13.168,13.168,0,0,0,13,0" fill="rgba(0,0,0,0.5)"/>
+                    <path id="github-icon" d="M13,0A13.168,13.168,0,0,0,0,13.329,13.307,13.307,0,0,0,8.89,25.977c.65.123.888-.289.888-.641,0-.318-.012-1.368-.018-2.482-3.617.806-4.38-1.573-4.38-1.573a3.507,3.507,0,0,0-1.443-1.95c-1.179-.827.089-.81.089-.81a2.741,2.741,0,0,1,1.993,1.374A2.729,2.729,0,0,0,9.8,21a2.866,2.866,0,0,1,.825-1.782C7.74,18.883,4.7,17.74,4.7,12.633a5.231,5.231,0,0,1,1.34-3.578A4.9,4.9,0,0,1,6.17,5.528S7.262,5.17,9.746,6.894a12.039,12.039,0,0,1,6.511,0c2.481-1.725,3.571-1.366,3.571-1.366a4.9,4.9,0,0,1,.127,3.527,5.221,5.221,0,0,1,1.338,3.578c0,5.119-3.041,6.247-5.936,6.577a3.23,3.23,0,0,1,.882,2.468c0,1.783-.015,3.219-.015,3.658,0,.355.234.77.893.639A13.305,13.305,0,0,0,26,13.329,13.168,13.168,0,0,0,13,0" />
                 </svg>
-            </div>
-            <div>
+            </a>
+            <!-- WhatsApp Icon ----------------- -->
+            <a href="tel:+2776-107-8726" class="scale-on-hover">
                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-                    <path id="whatsapp-icon" d="M22.212,3.778a12.958,12.958,0,0,0-22.1,9.1,12.814,12.814,0,0,0,1.728,6.441L0,26l6.863-1.792a12.986,12.986,0,0,0,6.186,1.568h.005A12.934,12.934,0,0,0,26,12.893a12.775,12.775,0,0,0-3.788-9.115M13.054,23.6h0a10.782,10.782,0,0,1-5.476-1.493l-.393-.232L3.108,22.939,4.2,18.988l-.256-.405A10.7,10.7,0,0,1,13.059,2.176a10.712,10.712,0,1,1,0,21.425m5.9-8.02c-.323-.161-1.914-.94-2.21-1.047s-.512-.161-.728.161-.836,1.047-1.024,1.262-.377.242-.7.081a8.844,8.844,0,0,1-2.6-1.6,9.709,9.709,0,0,1-1.8-2.23c-.189-.322-.02-.5.142-.657.145-.144.323-.376.485-.564a2.194,2.194,0,0,0,.323-.537.59.59,0,0,0-.027-.564c-.081-.161-.728-1.746-1-2.39-.263-.628-.529-.543-.728-.553s-.4-.011-.62-.011a1.191,1.191,0,0,0-.863.4,3.6,3.6,0,0,0-1.132,2.686A6.246,6.246,0,0,0,7.8,13.352a14.392,14.392,0,0,0,5.526,4.861,18.684,18.684,0,0,0,1.844.678,4.456,4.456,0,0,0,2.037.128,3.331,3.331,0,0,0,2.183-1.531,2.679,2.679,0,0,0,.189-1.531c-.081-.134-.3-.215-.62-.376" fill="rgba(0,0,0,0.5)" fill-rule="evenodd"/>
+                    <path id="whatsapp-icon" d="M22.212,3.778a12.958,12.958,0,0,0-22.1,9.1,12.814,12.814,0,0,0,1.728,6.441L0,26l6.863-1.792a12.986,12.986,0,0,0,6.186,1.568h.005A12.934,12.934,0,0,0,26,12.893a12.775,12.775,0,0,0-3.788-9.115M13.054,23.6h0a10.782,10.782,0,0,1-5.476-1.493l-.393-.232L3.108,22.939,4.2,18.988l-.256-.405A10.7,10.7,0,0,1,13.059,2.176a10.712,10.712,0,1,1,0,21.425m5.9-8.02c-.323-.161-1.914-.94-2.21-1.047s-.512-.161-.728.161-.836,1.047-1.024,1.262-.377.242-.7.081a8.844,8.844,0,0,1-2.6-1.6,9.709,9.709,0,0,1-1.8-2.23c-.189-.322-.02-.5.142-.657.145-.144.323-.376.485-.564a2.194,2.194,0,0,0,.323-.537.59.59,0,0,0-.027-.564c-.081-.161-.728-1.746-1-2.39-.263-.628-.529-.543-.728-.553s-.4-.011-.62-.011a1.191,1.191,0,0,0-.863.4,3.6,3.6,0,0,0-1.132,2.686A6.246,6.246,0,0,0,7.8,13.352a14.392,14.392,0,0,0,5.526,4.861,18.684,18.684,0,0,0,1.844.678,4.456,4.456,0,0,0,2.037.128,3.331,3.331,0,0,0,2.183-1.531,2.679,2.679,0,0,0,.189-1.531c-.081-.134-.3-.215-.62-.376" fill-rule="evenodd" />
                 </svg>
-            </div>
-            <div>
+            </a>
+            <!-- Email Icon ----------------- -->
+            <a id="mail-link-1" href="" class="scale-on-hover">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" viewBox="0 0 36 26">
-                    <path id="email-icon" data-name="Path 4" d="M1.811,290.12A1.28,1.28,0,0,0,.9,290.5a1.307,1.307,0,0,0-.372.922v23.388a1.293,1.293,0,0,0,1.281,1.3H35.237a1.279,1.279,0,0,0,.916-.38,1.307,1.307,0,0,0,.378-.925V291.427a1.307,1.307,0,0,0-.377-.927,1.279,1.279,0,0,0-.917-.381Zm3.29,2.6H31.95L18.525,305.25Zm-2.009,1.665,14.56,13.587a1.276,1.276,0,0,0,1.745,0l14.56-13.587V313.52H3.092Z" transform="translate(-0.53 -290.12)" fill="rgba(0,0,0,0.5)"/>
+                    <path id="email-icon" data-name="Path 4" d="M1.811,290.12A1.28,1.28,0,0,0,.9,290.5a1.307,1.307,0,0,0-.372.922v23.388a1.293,1.293,0,0,0,1.281,1.3H35.237a1.279,1.279,0,0,0,.916-.38,1.307,1.307,0,0,0,.378-.925V291.427a1.307,1.307,0,0,0-.377-.927,1.279,1.279,0,0,0-.917-.381Zm3.29,2.6H31.95L18.525,305.25Zm-2.009,1.665,14.56,13.587a1.276,1.276,0,0,0,1.745,0l14.56-13.587V313.52H3.092Z" transform="translate(-0.53 -290.12)" />
                 </svg>
-            </div>
-            <!-- <div> -->
-                <!-- Email obfuscation generated by http://rumkin.com/tools/mailto_encoder -->
-                <!-- <script type="text/javascript" language="javascript"> -->
-                    <!-- ML="2hpo\"t%bei0@jndr Mc:f</=msulw>.ga?"; -->
-                    <!-- MI="EP@1?8DG4HP9K53C=9B3KPIO33I8=;9BK3J>NB3HQIJ7<8B5GAP9K60:D?3H60:23?5D3K9360:L87I9584M=9B3KPIO33I8=;9BK3J>NB3HEFPM"; -->
-                    <!-- OT=""; -->
-                    <!-- for(j=0;j<MI.length;j++){ -->
-                    <!-- OT+=ML.charAt(MI.charCodeAt(j)-48); -->
-                    <!-- }document.write(OT); -->
-                <!-- </script> -->
-            <!-- </div> -->
+            </a>
         </div>
     </header>
 
-    <section class="full-width-column">
-        <h1 class="text-center color-black mt-2em">
+
+    <!-- Hello, World!
+    ----------------------------------------- -->
+    <section class="full-width-column pb-10">
+        <h1 class="text-center color-black mt-2">
             I, Programmer<br>
             <span class="gradient-accent red-orange">Hello, World!</span>
         </h1>
 
-        <p class="text-center color-black-60 mt-3em max-60-wide">
+        <p class="text-center color-black-60 mt-3 max-60-wide">
             I am a proficient full-stack web developer dedicated to delivering performant, tenable, and scalable web solutions.
         </p>
-        <p class="text-center color-black-60 mb-8em max-625px-wide">
+        <p class="text-center color-black-60 mb-8 max-625px-wide">
             My diverse experience spans web development, business management and graphic design. I bring the competencies to build well-construed plans that support project goals, propel organisational savings, drive efficiencies and launch engaging solutions.
         </p>
 
-        <div class="code-block"></div>
+        <!-- <div class="code-block"> -->
+
+        <!-- </div> -->
     </section>
 
-    <section class="full-width-column bkg-black bowed-shape-section py-10">
-        <h2 class="text-center color-black color-white mt-2em">
+    <!-- I've Been Busy - Gallery 1
+    ----------------------------------------- -->
+    <section id="section-been-busy" class="full-width-column bkg-black bowed-shape-section py-10">
+        <h2 class="text-center color-black color-white "> <!-- mt-1 -->
             I've Been Busy&hellip;<br>
             <span class="gradient-accent purple-red">Recent Work</span>
         </h2>
 
-        <p class="text-center color-white mt-3em max-625px-wide mb-5em">
+        <p class="text-center color-white mt-3 max-625px-wide mb-5">
             Below is a selection of recent work that I've been involved in. Click a thumbnail for more details.
         </p>
 
         <div class="recent-work-carousel">
-            <div><img src="images/Jill-Silverman-desktop-mockup-1.png"><div></div></div>
-            <div><img src="images/JAMB-desktop-mockup-2.png"><div></div></div>
-            <div><img src="images/NTS-desktop-mockup-1.png"><div></div></div>
-            <div><img src="images/TMC-desktop-mockup-1.png"><div></div></div>
+            <div>
+                <img src="images/Jill-Silverman-desktop-mockup-1.png" data-modal="modal-jill">
+                <div></div>
+            </div>
+            <div>
+                <img src="images/JAMB-desktop-mockup-2.png"
+                data-modal="modal-jamb">
+                <div></div>
+            </div>
+            <div>
+                <img src="images/NTS-desktop-mockup-1.png"
+                data-modal="modal-nts">
+                <div></div>
+            </div>
+            <div>
+                <img src="images/TMC-desktop-mockup-1.png"
+                data-modal="modal-portfolio">
+                <div></div>
+            </div>
         </div>
     </section>
 
-    <section class="full-width-column bkg-black py-8">
+    <!-- Once Upon a Time - Gallery 2
+    ----------------------------------------- -->
+    <section id="section-earlier-work" class="full-width-column bkg-black pt-8">
         <h2 class="text-center color-black color-white">
             Once Upon a Time&hellip;<br>
             <span class="gradient-accent purple-red">Older Work</span>
         </h2>
 
-        <p class="text-center color-white mt-3em max-625px-wide mb-5em">
+        <p class="text-center color-white mt-3 max-625px-wide">
             A selection of work that's from a bit earlier than the preceeding section.
         </p>
+    </section>
 
+    <section class="three-column-width bkg-black pt-5 pb-8">
         <div class="older-work-carousel">
             <div><img src="images/Jill-Silverman-desktop-mockup-1.png"><div></div></div>
             <div><img src="images/JAMB-desktop-mockup-2.png"><div></div></div>
@@ -105,21 +128,119 @@
             <div><img src="images/TMC-desktop-mockup-1.png"><div></div></div>
         </div>
 
-        <p class="text-center color-white mt-3em max-625px-wide caption-text">
+        <p class="text-center color-white pt-3 px-4 caption-text">
             I was involved in both design and printing of many wine labels. Some incorporated artisan letterpress techniques. The above are actual examples of previous work at Paper Chefs.
         </p>
     </section>
 
-    <section class="full-width-column bkg-black py-8">
+
+
+    <!-- Tetris
+    ----------------------------------------- -->
+    <section id="section-tetris" class="full-width-column bkg-black py-8">
         <h2 class="text-center color-black color-white">
-            Get Your Blocks in a Row<br>
+            Got My Blocks in a Row<br>
             <span class="gradient-accent purple-red">From NAND to Tetris</span>
         </h2>
 
-        <p class="text-center color-white mt-3em max-625px-wide">
+        <img class="disp-block mx-auto mt-1 max-width-100" src="images/tetris-blocks.svg">
+
+        <p class="text-center color-white mt-2 max-625px-wide">
             I was involved in both design and printing of many wine labels. Some incorporated artisan letterpress techniques. The above are actual examples of previous work at Paper Chefs.
         </p>
+
+        <a class="button purple mx-auto mt-4" href="index.html">Play the Game</a>
     </section>
+
+
+    <!-- Footer
+    ----------------------------------------- -->
+    <footer class="py-6">
+        <div class="">
+            <div class="site-map-flex">
+                <a href="#section-been-busy">Recent Work</a>
+                <a href="#section-earlier-work">Earlier Work</a>
+                <a href="#section-tetris">Tetris Game</a>
+            </div>
+            <div class="contact-flex">
+                <!-- LinkedIn Icon ----------------- -->
+                <a href="https://www.linkedin.com/in/nicolas-goosen" class="scale-on-hover" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                        <path id="linkedin-icon" d="M20.025,7.025a13,13,0,1,0,13,13A13,13,0,0,0,20.025,7.025ZM16.557,26.31H13.7V17.089h2.854ZM15.116,15.881a1.7,1.7,0,1,1,1.688-1.7A1.695,1.695,0,0,1,15.116,15.881ZM27.253,26.31h-2.84v-4.84c0-1.328-.5-2.069-1.554-2.069-1.142,0-1.739.772-1.739,2.069v4.84H18.382V17.089h2.738V18.33A3.216,3.216,0,0,1,23.9,16.807c1.955,0,3.355,1.194,3.355,3.664Z" transform="translate(-7.025 -7.025)" />
+                    </svg>
+                </a>
+                <!-- GitHub Icon ----------------- -->
+                <a href="https://github.com/NicolasGoosen" class="scale-on-hover" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                        <path id="github-icon" d="M13,0A13.168,13.168,0,0,0,0,13.329,13.307,13.307,0,0,0,8.89,25.977c.65.123.888-.289.888-.641,0-.318-.012-1.368-.018-2.482-3.617.806-4.38-1.573-4.38-1.573a3.507,3.507,0,0,0-1.443-1.95c-1.179-.827.089-.81.089-.81a2.741,2.741,0,0,1,1.993,1.374A2.729,2.729,0,0,0,9.8,21a2.866,2.866,0,0,1,.825-1.782C7.74,18.883,4.7,17.74,4.7,12.633a5.231,5.231,0,0,1,1.34-3.578A4.9,4.9,0,0,1,6.17,5.528S7.262,5.17,9.746,6.894a12.039,12.039,0,0,1,6.511,0c2.481-1.725,3.571-1.366,3.571-1.366a4.9,4.9,0,0,1,.127,3.527,5.221,5.221,0,0,1,1.338,3.578c0,5.119-3.041,6.247-5.936,6.577a3.23,3.23,0,0,1,.882,2.468c0,1.783-.015,3.219-.015,3.658,0,.355.234.77.893.639A13.305,13.305,0,0,0,26,13.329,13.168,13.168,0,0,0,13,0" />
+                    </svg>
+                </a>
+                <!-- WhatsApp Icon ----------------- -->
+                <a href="tel:+2776-107-8726" class="scale-on-hover">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                        <path id="whatsapp-icon" d="M22.212,3.778a12.958,12.958,0,0,0-22.1,9.1,12.814,12.814,0,0,0,1.728,6.441L0,26l6.863-1.792a12.986,12.986,0,0,0,6.186,1.568h.005A12.934,12.934,0,0,0,26,12.893a12.775,12.775,0,0,0-3.788-9.115M13.054,23.6h0a10.782,10.782,0,0,1-5.476-1.493l-.393-.232L3.108,22.939,4.2,18.988l-.256-.405A10.7,10.7,0,0,1,13.059,2.176a10.712,10.712,0,1,1,0,21.425m5.9-8.02c-.323-.161-1.914-.94-2.21-1.047s-.512-.161-.728.161-.836,1.047-1.024,1.262-.377.242-.7.081a8.844,8.844,0,0,1-2.6-1.6,9.709,9.709,0,0,1-1.8-2.23c-.189-.322-.02-.5.142-.657.145-.144.323-.376.485-.564a2.194,2.194,0,0,0,.323-.537.59.59,0,0,0-.027-.564c-.081-.161-.728-1.746-1-2.39-.263-.628-.529-.543-.728-.553s-.4-.011-.62-.011a1.191,1.191,0,0,0-.863.4,3.6,3.6,0,0,0-1.132,2.686A6.246,6.246,0,0,0,7.8,13.352a14.392,14.392,0,0,0,5.526,4.861,18.684,18.684,0,0,0,1.844.678,4.456,4.456,0,0,0,2.037.128,3.331,3.331,0,0,0,2.183-1.531,2.679,2.679,0,0,0,.189-1.531c-.081-.134-.3-.215-.62-.376" fill-rule="evenodd"/>
+                    </svg>
+                </a>
+                <!-- Email Icon ----------------- -->
+                <a id="mail-link-2" href="" class="scale-on-hover">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="26" viewBox="0 0 36 26">
+                        <path id="email-icon" data-name="Path 4" d="M1.811,290.12A1.28,1.28,0,0,0,.9,290.5a1.307,1.307,0,0,0-.372.922v23.388a1.293,1.293,0,0,0,1.281,1.3H35.237a1.279,1.279,0,0,0,.916-.38,1.307,1.307,0,0,0,.378-.925V291.427a1.307,1.307,0,0,0-.377-.927,1.279,1.279,0,0,0-.917-.381Zm3.29,2.6H31.95L18.525,305.25Zm-2.009,1.665,14.56,13.587a1.276,1.276,0,0,0,1.745,0l14.56-13.587V313.52H3.092Z" transform="translate(-0.53 -290.12)" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="">
+            <div class="font-logo">
+                <a href="index.html">NicolasGoosen</a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright 
+                <script type="text/javascript">
+                    document.write(new Date().getUTCFullYear());
+                </script>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals
+    ----------------------------------------- -->
+    <div class="modal" id="modal-jill">
+        <h3 class="color-white">Counseling and Therapy</h3>
+        <p class="color-white pt-2">
+            Jill Silverman approached WestHouz for a site re-design. Below is my first proposal. We went through many iterations since then, most of which where influenced by SEO improvements.
+        </p>
+        <p class="color-white pb-3">See the live site <a href="https://counselingandtherapy.com/" target="_blank">here</a>.</p>
+        <img src="images/Jill-Silverman-desktop-mockup-1.png">
+        <div class="close"></div>
+    </div>
+
+    <div class="modal" id="modal-jamb">
+        <h3 class="color-white">JAMB</h3>
+        <p class="color-white pt-2">
+            JAMB approached WestHouz for a new website. Design and development. Implemented as custom WordPress theme.
+        </p>
+        <p class="color-white pb-3">See the live site <a href="https://jambservices.com/" target="_blank">here</a>.</p>
+        <img src="images/JAMB-desktop-mockup-2.png">
+        <div class="close"></div>
+    </div>
+
+    <div class="modal" id="modal-nts">
+        <h3 class="color-white">NTS</h3>
+        <p class="color-white pt-2">I was employed by NTS for... backend Laravel, front end customer site. etc. etc.</p>
+        <p class="color-white pb-3">See the live site <a href="https://namibia-tours-safaris.com/" target="_blank">here</a>.</p>
+        <img src="images/NTS-desktop-mockup-1.png">
+        <div class="close"></div>
+    </div>
+
+    <div class="modal" id="modal-portfolio">
+        <h3 class="color-white">My Portfolio</h3>
+        <p class="color-white pt-2 pb-3">I approached myself to design a portfolio.</p>
+        <img src="images/TMC-desktop-mockup-1.png">
+        <div class="close"></div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="393" height="217" viewBox="0 0 393 217">
+    <defs>
+        <linearGradient id="linear-gradient" x1="1.111" y1="0.952" x2="1.101" y2="-0.994" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#21ccb8" />
+            <stop offset="1" stop-color="#21ccb8" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1="1.028" y1="2.058" x2="1.031" y2="0.031" xlink:href="#linear-gradient" />
+        <linearGradient id="linear-gradient-3" x1="1.179" y1="0.878" x2="1.176" y2="-0.54" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0a23fb" />
+            <stop offset="1" stop-color="#0a23fb" stop-opacity="0" />
+        </linearGradient>
+    </defs>
+    <rect id="Rectangle_99"  data-name="Rectangle 99"  width="41" height="41" transform="translate(  0  88)" fill="#d93434"                 />
+    <rect id="Rectangle_100" data-name="Rectangle 100" width="41" height="41" transform="translate(  0 132)" fill="#d93434"                 />
+    <rect id="Rectangle_105" data-name="Rectangle 105" width="41" height="41" transform="translate( 44 132)" fill="#d93434"                 />
+    <rect id="Rectangle_106" data-name="Rectangle 106" width="41" height="41" transform="translate( 44 176)" fill="#d93434"                 />
+    <rect id="Rectangle_109" data-name="Rectangle 109" width="41" height="41" transform="translate( 88  88)" fill="#fd24e2"                 />
+    <rect id="Rectangle_110" data-name="Rectangle 110" width="41" height="41" transform="translate( 88 132)" fill="#fd24e2"                 />
+    <rect id="Rectangle_111" data-name="Rectangle 111" width="41" height="41" transform="translate( 88 176)" fill="#fd24e2"                 />
+    <rect id="Rectangle_114" data-name="Rectangle 114" width="41" height="41" transform="translate(132  88)" fill="#21ccb8"                 />
+    <rect id="Rectangle_116" data-name="Rectangle 116" width="41" height="41" transform="translate(132 176)" fill="#fd24e2"                 />
+    <rect id="Rectangle_117" data-name="Rectangle 117" width="41" height="41" transform="translate(132  44)" fill="url(#linear-gradient)"   />
+    <rect id="Rectangle_118" data-name="Rectangle 118" width="41" height="41" transform="translate(132    )" fill="url(#linear-gradient-2)" />
+    <rect id="Rectangle_121" data-name="Rectangle 121" width="41" height="41" transform="translate(176 176)" fill="#28fb2e"                 />
+    <rect id="Rectangle_124" data-name="Rectangle 124" width="41" height="41" transform="translate(220  88)" fill="#0a23fb"                 />
+    <rect id="Rectangle_125" data-name="Rectangle 125" width="41" height="41" transform="translate(220 132)" fill="#0a23fb"                 />
+    <rect id="Rectangle_126" data-name="Rectangle 126" width="41" height="41" transform="translate(220 176)" fill="#28fb2e"                 />
+    <rect id="Rectangle_127" data-name="Rectangle 127" width="41" height="41" transform="translate(220  44)" fill="url(#linear-gradient-3)" />
+    <rect id="Rectangle_129" data-name="Rectangle 129" width="41" height="41" transform="translate(264  88)" fill="#0a23fb"                 />
+    <rect id="Rectangle_131" data-name="Rectangle 131" width="41" height="41" transform="translate(264 176)" fill="#28fb2e"                 />
+    <rect id="Rectangle_134" data-name="Rectangle 134" width="41" height="41" transform="translate(308  88)" fill="#fd9326"                 />
+    <rect id="Rectangle_135" data-name="Rectangle 135" width="41" height="41" transform="translate(308 132)" fill="#fd9326"                 />
+    <rect id="Rectangle_136" data-name="Rectangle 136" width="41" height="41" transform="translate(308 176)" fill="#28fb2e"                 />
+    <rect id="Rectangle_140" data-name="Rectangle 140" width="41" height="41" transform="translate(352 132)" fill="#fd9326"                 />
+    <rect id="Rectangle_141" data-name="Rectangle 141" width="41" height="41" transform="translate(352 176)" fill="#fd9326"                 />
+</svg>
