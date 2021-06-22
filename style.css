@@ -48,12 +48,21 @@ font-family: 'JetBrains Mono', monospace;
 h1,
 h2 {
     font-family: 'Raleway', sans-serif;
-    font-size: 3.625rem; /* 58px */
+    font-size: 2.2rem; 
     font-style: normal;
     font-weight: 900; /* black */
     letter-spacing: -0.020em;  /* adobe xd's unit is 1/1000em */
-    line-height: 1.030; /* 58px */
+    line-height: 1.030;
 }
+@media ( min-width: 375px ) {
+    h1, h2 { font-size: 2.4rem; } }
+@media ( min-width: 414px ) {
+    h1, h2 { font-size: 2.8rem; } }
+@media ( min-width: 650px ) {
+    h1, h2 { font-size: 3.0rem; } }
+@media ( min-width: 768px ) {
+    h1, h2 { font-size: 3.625rem; /* 58px */ } }
+
 h3 {
     font-family: 'Raleway', sans-serif;
     font-size: 2rem; /* 32px */
@@ -70,12 +79,15 @@ body {
 
 p {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.250rem; /* 20px */
+    font-size: 1.100rem; /* 20px */
     font-style: normal;
     font-weight: 500; /* medium */
     letter-spacing: 0.000em;  /* adobe xd's unit is 1/1000em */
     line-height: 1.800; /* 36px */
 }
+@media ( min-width: 414px ) {
+    p { font-size: 1.250rem; /* 20px */ } }
+
 p > a,
 p > a:link,
 p > a:visited { color: white; }
@@ -122,8 +134,10 @@ new background-clip is made. You have to use 'background-image'.
     background-size: 100% auto;
 }
 
-.gradient-accent.red-orange { background-image: linear-gradient(30deg,      Crimson ,    Orange ); }
-.gradient-accent.purple-red { background-image: linear-gradient(30deg, MediumPurple , IndianRed ); }
+.gradient-accent.red-orange   { background-image: linear-gradient(30deg,      crimson ,         orange ); }
+.gradient-accent.purple-red   { background-image: linear-gradient(30deg, mediumpurple ,      indianred ); }
+.gradient-accent.blue-pink    { background-image: linear-gradient(30deg,         blue ,        hotpink ); }
+.gradient-accent.yellow-green { background-image: linear-gradient(30deg,     moccasin , mediumseagreen ); }
 
 /* red: 
 rgb(253, 96, 87);
@@ -208,10 +222,13 @@ header {
     border-bottom: 1px solid rgba(0,0,0,0.2);
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-left:  var( --grid-padding );  
     margin-right: var( --grid-padding ); 
     padding: 2rem 0;
+}
+@media ( min-width: 414px ) {
+    header { justify-content: space-between; }
 }
 header > div:last-child {
     align-items: center;
@@ -219,11 +236,18 @@ header > div:last-child {
     flex-flow: row nowrap;
     justify-content: space-between;
 }
-header > div:last-child > a {
-    margin-right: 1.25rem;
+
+header > div:first-child { display: none; }
+header > div:last-child > a { margin-right: 1.25rem; }
+header > div:last-child > a:last-child { margin-right: 0; }
+@media ( min-width: 414px ) {
+    header > div:first-child { display: block; }
+    header > div:last-child > a { margin-right: 0.9rem; }
+    header > div:last-child > a:last-child { margin-right: 0; }
 }
-header > div:last-child > a:last-child {
-    margin-right: 0;
+@media ( min-width: 500px ) {
+    header > div:last-child > a { margin-right: 1.25rem; }
+    header > div:last-child > a:last-child { margin-right: 0; }
 }
 
 header a,
@@ -348,10 +372,9 @@ This carousel is only 3 columns wide on desktop.
     scroll-snap-type: x mandatory;
 
     width: 100%;
-    /* todo: fix proportional height here */
-    height: 350px;
+    /* proportional to 3-column */
+    height: calc( (100vw - 2 * var( --three-columns-padding )) * 0.4 );
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -363,21 +386,105 @@ This carousel is only 3 columns wide on desktop.
 }
 
 .older-work-carousel > div {
-    border: 1px solid cyan;
     flex-shrink: 0;
     height: 100%;
     overflow: hidden;
     scroll-snap-align: center;    
     width: 100%;
+    margin-right: 20px;
+    border-radius: 5px;
 }
+.older-work-carousel > div:last-child { margin-right: 0; }
+
 .older-work-carousel > div > img {
-    border-radius: 3px;
-    display: block;
-    transition: opacity 0.3s ease-in-out;
-    width: 100%;
 }
 .older-work-carousel > div:hover {
 }
+
+
+/* Individual Frames of Older Work Carousel
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+*/
+.older-work-carousel .farmshop-packaging {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.older-work-carousel .farmshop-packaging img {
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 100%;
+    object-fit: cover;
+}
+.older-work-carousel .farmshop-packaging img:first-child {
+    width: calc( (100% - 20px) / 3 );
+}
+.older-work-carousel .farmshop-packaging img:last-child {
+    width: calc( 2 * (100% - 20px) / 3 );
+}
+
+.older-work-carousel .wine-labels {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.older-work-carousel .wine-labels img {
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 100%;
+    object-fit: cover;
+}
+.older-work-carousel .wine-labels img {
+    width: calc( (100% - 30px) / 5 );
+}
+.older-work-carousel .wine-labels img:last-child {
+    width: calc( 2 * (100% - 60px) / 5 );
+}
+ 
+.older-work-carousel .letterpress {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.older-work-carousel .letterpress * {
+    flex-shrink: 0;
+    flex-grow: 0;
+    object-fit: cover;
+}
+.older-work-carousel .letterpress > * { height: 100%; }
+/* height of carousel is 0.4 x width 
+   I want this grid to a middle column composed of two
+   square images (in a column), with 10px gutter between them.
+   Then fit the rest of the space with the larger pics
+   to the left and right.
+*/
+.older-work-carousel .letterpress {
+    --carousel-height: calc( 100% * 0.4 );
+    --small-square: calc( (var( --carousel-height ) - 10px) / 2 );
+}
+.older-work-carousel .letterpress > div {
+    width: var( --small-square );
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.older-work-carousel .letterpress > div img {
+    width: 100%;
+    height: calc( (100% - 10px) / 2 );
+}
+.older-work-carousel .letterpress > div {
+    width: var( --small-square );
+}
+
+.older-work-carousel .letterpress > img {
+    width: calc( (100% - 20px - var( --small-square )) / 2 );
+}
+ 
+
 
 
 /* Modals
@@ -471,13 +578,36 @@ footer > div:first-child {
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: center;
 }
+@media ( min-width: 414px ) {
+    footer > div:first-child {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+
 footer > div:last-child {
     display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-end;
+    flex-flow: column nowrap;
+    align-items: center;
     justify-content: space-between;
+}
+footer > div:last-child .copyright {
+    margin-top:  0.2em;
+}
+@media ( min-width: 414px ) {
+    footer > div:last-child {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    footer > div:last-child .copyright {
+        margin: 0;
+    }
 }
 
 footer a,
@@ -493,30 +623,34 @@ footer a.scale-on-hover:visited { transition: transform 0.1s ease-in-out; }
 footer a.scale-on-hover:hover   { transform: scale(1.1); }
 footer a.scale-on-hover:active  { transform: scale(1.0); }
 
-footer .site-map-flex {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    height: max-content;
-    width: max-content;
-    justify-content: space-between;
-}
-footer .site-map-flex a { margin-bottom: 1.125rem; /* 18px */ }
-footer .site-map-flex a:last-child { margin-bottom: 0; }
+footer .site-map-flex { display: none; }
 
-footer .site-map-flex a,
-footer .site-map-flex a:link,
-footer .site-map-flex a:visited {
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.937rem; /* 15px */
-    font-style: normal;
-    font-weight: 500; /* medium */
-    letter-spacing: 0.000em;  /* adobe xd's unit is 1/1000em */
-    line-height: 1.000; /* 36px */
-}
-footer .site-map-flex a:hover  { font-weight: 600; }
-footer .site-map-flex a:active { font-weight: 600; }
+@media ( min-width: 414px ) {
+    footer .site-map-flex {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        height: max-content;
+        width: max-content;
+        justify-content: space-between;
+    }
+    footer .site-map-flex a { margin-bottom: 1.125rem; /* 18px */ }
+    footer .site-map-flex a:last-child { margin-bottom: 0; }
 
+    footer .site-map-flex a,
+    footer .site-map-flex a:link,
+    footer .site-map-flex a:visited {
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.937rem; /* 15px */
+        font-style: normal;
+        font-weight: 500; /* medium */
+        letter-spacing: 0.000em;  /* adobe xd's unit is 1/1000em */
+        line-height: 1.000; /* 36px */
+        white-space: nowrap;
+    }
+    footer .site-map-flex a:hover  { font-weight: 600; }
+    footer .site-map-flex a:active { font-weight: 600; }
+}
 
 footer > hr {
     border: none;
@@ -678,12 +812,99 @@ section.bowed-shape-section:before {
 
 
 /* Code Block
-–––––––––––––––––––––––––––––––––––––––––––––––––– 
+––––––––––––––––––––––––––––––––––––––––––––––––––
+todo: convert all below px values to rem?
 */
-.code-block {
-    width: 525px;
-    height: 245px;
-    margin: 0 auto;
-    background-color: rgba(36,50,56,1.0);
-    border-radius: 5px;
+.code-block { display: none; }
+@media ( min-width: 500px ) {
+    .code-block {
+        display: block;
+        width: 100%;
+        height: min-content;
+        margin: 0 auto;
+        background-color: rgba(36,50,56,1.0);
+        border-radius: 6px;
+        padding-bottom: 10px;
+        box-shadow: 0px 15px 20px 5px rgb(0 0 0 / 30%);
+    }
 }
+
+.code-block-buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 0 19px 14px;
+    width: min-content;
+}
+.code-block-buttons div {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+.code-block-buttons div:last-child { margin-right: 0; }
+.code-block-buttons div:nth-child(1) { background-color: rgba( 253,  96,  87, 1.0); }
+.code-block-buttons div:nth-child(2) { background-color: rgba( 248, 191,  50, 1.0); }
+.code-block-buttons div:nth-child(3) { background-color: rgba(  46, 200,  72, 1.0); }
+
+.code-block-content-flexbox {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.code-block-line-numbers {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200; /* Extra-light */
+    letter-spacing: -0.030em;  /* adobe xd's unit is 1/1000em */
+    line-height: 26px;
+
+    width: 60px;
+    text-align: center;
+    color: rgba( 112, 112, 112, 1.0 );
+    flex-shrink: 0;
+}
+
+.code-block-code-content,
+.code-block-code-content pre {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400; /* regular */
+    letter-spacing: 0.000em;  /* adobe xd's unit is 1/1000em */
+    line-height: 26px;
+    color: white;
+    flex-grow: 1;
+}
+
+/* keyword */
+.cb-kw {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500; /* Medium */
+    font-style: italic;
+    color: rgba( 171, 144, 206, 1.0 );
+}
+/* variable identifier */
+.cb-vi {
+
+}
+/* operators */
+.cb-op {
+    color: rgba(  19, 214, 233, 1.0 );
+}
+/* string literal */
+.cb-sl {  
+    color: rgba( 204, 225, 169, 1.0 );
+}
+
+
+
+
+
+
+
+

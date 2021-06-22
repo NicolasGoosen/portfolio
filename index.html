@@ -10,9 +10,16 @@
          Raleway Black 900,
          Raleway Semi-Bold 600,
          Raleway Medium 500
+         JetBrains Mono Extra-light 200
+         JetBrains Mono Regular 400
+         JetBrains Medium 500 italic
+
      -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;0,400;1,500&display=swap" rel="stylesheet">
 
     <title></title>
 </head>
@@ -60,24 +67,48 @@
             <span class="gradient-accent red-orange">Hello, World!</span>
         </h1>
 
-        <p class="text-center color-black-60 mt-3 max-60-wide">
+        <p class="text-center color-black-60 mt-3 max-625px-wide">
             I am a proficient full-stack web developer dedicated to delivering performant, tenable, and scalable web solutions.
         </p>
-        <p class="text-center color-black-60 mb-8 max-625px-wide">
+        <p class="text-center color-black-60 max-625px-wide">
             My diverse experience spans web development, business management and graphic design. I bring the competencies to build well-construed plans that support project goals, propel organisational savings, drive efficiencies and launch engaging solutions.
         </p>
-
-        <!-- <div class="code-block"> -->
-
-        <!-- </div> -->
     </section>
+
+    <!-- Code Block
+    ----------------------------------------- -->
+    <section class="three-column-width">
+        <div class="code-block">
+            <div class="code-block-buttons">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="code-block-content-flexbox">
+                <div class="code-block-line-numbers">
+                    1<br>2<br>3<br>4<br>5<br>6<br>7<br>8
+                </div>
+                <div class="code-block-code-content">
+<pre>
+<span class="cb-kw">My</span> <span class="cb-vi">pertinent_skills</span> <span class="cb-op">=</span> <span class="cb-op">[</span>
+    <span class="cb-op">'</span><span class="cb-sl">full stack web development</span><span class="cb-op">'</span><span class="cb-op">,</span>
+    <span class="cb-op">'</span><span class="cb-sl">RESTful API development</span><span class="cb-op">'</span><span class="cb-op">,</span>
+    <span class="cb-op">'</span><span class="cb-sl">scalable system design</span><span class="cb-op">'</span><span class="cb-op">,</span>
+    <span class="cb-op">'</span><span class="cb-sl">competitive programming</span><span class="cb-op">'</span>
+<span class="cb-op">]</span>
+</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- I've Been Busy - Gallery 1
     ----------------------------------------- -->
     <section id="section-been-busy" class="full-width-column bkg-black bowed-shape-section py-10">
         <h2 class="text-center color-black color-white "> <!-- mt-1 -->
             I've Been Busy&hellip;<br>
-            <span class="gradient-accent purple-red">Recent Work</span>
+            <span class="gradient-accent blue-pink">Recent Work</span>
         </h2>
 
         <p class="text-center color-white mt-3 max-625px-wide mb-5">
@@ -112,7 +143,7 @@
     <section id="section-earlier-work" class="full-width-column bkg-black pt-8">
         <h2 class="text-center color-black color-white">
             Once Upon a Time&hellip;<br>
-            <span class="gradient-accent purple-red">Older Work</span>
+            <span class="gradient-accent yellow-green">Older Work</span>
         </h2>
 
         <p class="text-center color-white mt-3 max-625px-wide">
@@ -122,10 +153,29 @@
 
     <section class="three-column-width bkg-black pt-5 pb-8">
         <div class="older-work-carousel">
-            <div><img src="images/Jill-Silverman-desktop-mockup-1.png"><div></div></div>
-            <div><img src="images/JAMB-desktop-mockup-2.png"><div></div></div>
-            <div><img src="images/NTS-desktop-mockup-1.png"><div></div></div>
-            <div><img src="images/TMC-desktop-mockup-1.png"><div></div></div>
+            <div class="letterpress">
+                <!-- wine labels  -->
+                <img src="images/letterpress-1.jpg">
+                <div>
+                    <img src="images/letterpress-2.jpg">
+                    <img src="images/letterpress-3.jpg">
+                </div>
+                <img src="images/letterpress-4.jpg">
+            </div>
+            <div class="farmshop-packaging">
+                <!-- farmshop packaging -->
+                <img src="images/farm-shop-1.jpg">
+                <img src="images/farm-shop-2.jpg">
+            </div>
+            <div class="wine-labels">
+                <!-- wine labels  -->
+                <img src="images/wine-bottle-1.jpg">
+                <img src="images/wine-bottle-2.jpg">
+                <img src="images/wine-bottle-3.jpg">
+                <img src="images/wine-bottle-4.jpg">
+            </div>
+            <div><img src="images/NTS-desktop-mockup-1.png"></div>
+            <div><img src="images/TMC-desktop-mockup-1.png"></div>
         </div>
 
         <p class="text-center color-white pt-3 px-4 caption-text">

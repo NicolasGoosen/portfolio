@@ -1,25 +1,26 @@
 ### urgent todo
-[ ] rework column and gutter widths to variables
-[ ] check all links might need to change to new domain
-[ ] make more gradient colours and set headings
-[ ] check mobile sizes and responsiveness (responsive grid needs work?)
-[ ] tetris svg isn't shrinking on mobile
+[ ] check mobile font sizes
 [ ] remove max-600px etc styles
-[ ] header and footer to be responsive
-
+[ ] check all links might need to change to new domain
 
 #### Recent Work Carousel
-[ ] click to open something!!
-[ ] add arrows left / right
+[ ] add a ••• bar above to show pages
 [ ] 'more details' button on hover
 [ ] click on child element should block click on parent element
+[ ] check width at large screen sizes
+[ ] on mobile, the close button is too close to the corner
 
-##### Once upon a time
+#### Once upon a time
 [ ] fill with new pics
-[ ] add arrows left / right
+[ ] add a ••• bar above to show pages
 [ ] have blurb copy below images change on scroll
 
+#### Code Block
+[ ] make it move / interactive
+
 ### not-so-urgent todo
+[ ] gradient colors generator site
+[ ] rework column and gutter widths to variables
 [ ] optimise all images
 [ ] all images lazy load
 [ ] rewrite all copy
