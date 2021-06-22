@@ -1,7 +1,10 @@
-### urgent todo
-- [ ] check mobile font sizes
-- [ ] remove max-600px etc styles
-- [ ] check all links might need to change to new domain
+#### todo
+- [ ] optimise images
+- [ ] double-check mobile font sizes
+- [ ] refactor max-600px etc styles?
+- [ ] check all links might need to change in new domain
+- [ ] do something with the code block
+- [ ] redesign recent work modals (add 'tech used' section)
 
 #### Recent Work Carousel
 - [ ] add a ••• bar above to show pages

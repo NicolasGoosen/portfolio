@@ -524,7 +524,7 @@ This carousel is only 3 columns wide on desktop.
     right: 5vw;
     transform: translate(50%, -50%);
     border-radius: 100%;
-    border: 1px solid white;
+    border: 2px solid white;
 
     background-clip: border-box; 
     background-color: transparent;
