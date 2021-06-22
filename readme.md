@@ -5,6 +5,8 @@
 - [ ] check all links might need to change in new domain
 - [ ] do something with the code block
 - [ ] redesign recent work modals (add 'tech used' section)
+- [ ] add page dots above older-work-carousel
+- [ ] click-to-enlarge on older-work-carousel pictures
 
 #### Recent Work Carousel
 - [ ] add a ••• bar above to show pages
